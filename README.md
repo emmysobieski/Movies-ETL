@@ -12,6 +12,17 @@
 
 (4) Assume Kaggle metadata stays better than Wiki movie data, as this script prioritizes kaggle data and then fills in blanks with Wiki data:
 
+    # Documenting what we are doing with Competing data:
+    # Wiki (json)        Movielens (2 CSVs: ratings and movies)       Resolution
+    #--------------------------------------------------------------------------
+    # title_wiki               title_kaggle                          Drop Wikipedia
+    # running_time             runtime                               Keep Kaggle; fill in zeros with Wikipedia data
+    # budget_wiki              budget_kaggle                         Keep Kaggle; fill in zeros with Wikipedia data
+    # box_office               revenue                               Keep Kaggle; fill in zeros with Wikipedia data
+    # release_date_wiki        release_date_kaggle                   Drop Wikipedia
+    # Language                 original_language                     Drop Wikipedia
+    # Production company(s)    production_companies                  Drop Wikipedia
+
 
 (5) Remove video column action assumes that video will not increase in importance in the future, which is likely a good assumption, as streaming is likely to continue to take share over video releases.
 
