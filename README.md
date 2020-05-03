@@ -2,7 +2,7 @@
 
 # Challenge
 
-**Assumptions made when building the script:
+# Assumptions made when building the script:
 
 (1) For the main function of removing alternative titles to only have one set of titles, ie removing titles that are in other languages, it assumes that there will be a title left, ie assumes there is a title in English, and assumes that no additional languages will be added in the future
 
@@ -18,11 +18,11 @@
 
 (7) This script dropped 2 incorrectly merged movies (The Holiday and From Here to Eternity), but this assumes no others in the future will have been merged incorrectly between the Wiki and Kaggle movie data.  It also assumes that this problem does not become more widespread going forward.
 
-# I assume since you are testing my own postgress to see if the tables are there, that you need the config.py to be loaded into Github so I set the password to something I do not use anywhere else, and put it in config.py and did not gitignore it.
+**I assume since you are testing my own postgress to see if the tables are there, that you need the config.py to be loaded into Github so I set the password to something I do not use anywhere else, and put it in config.py and did not gitignore it.
 
 # Special notes:
 
-# I used try-except in the loading of data into SQL so that it lets you know if there is an error loading data.  
+**I used try-except in the loading of data into SQL so that it lets you know if there is an error loading data.  
 
  db_string = f"postgres://postgres:{db_password}@127.0.0.1:5432/movie_data"
  
