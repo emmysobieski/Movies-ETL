@@ -10,7 +10,8 @@
 
 (3) Formatting dollar amounts assumes no new formats coming from inputs in the future
 
-(4) Assume Wiki data stays better than kaggle movie metadata, as this script prioritizes wiki data and then fills in blanks with kaggle data.
+(4) Assume Kaggle metadata stays better than Wiki movie data, as this script prioritizes kaggle data and then fills in blanks with Wiki data:
+
 
 (5) Remove video column action assumes that video will not increase in importance in the future, which is likely a good assumption, as streaming is likely to continue to take share over video releases.
 
